@@ -1,0 +1,36 @@
+.font(@name){
+  @font-face {
+    font-family: 'SF-@{name}';
+    src:    url('../fonts/SFUIDisplay/@{name}/SFUIDisplay-@{name}.eot');
+    src:    url('../fonts/SFUIDisplay/@{name}/SFUIDisplay-@{name}.woff2')                   format('woff2'),
+    url('../fonts/SFUIDisplay/@{name}/SFUIDisplay-@{name}.woff')                    format('woff'),
+    url('../fonts/SFUIDisplay/@{name}/SFUIDisplay-@{name}.ttf')                     format('truetype'),
+    url('../fonts/SFUIDisplay/@{name}/SFUIDisplay-@{name}.svg#SFUIDisplay-@{name}') format('svg'),
+    url('../fonts/SFUIDisplay/@{name}/SFUIDisplay-@{name}.eot?#iefix')              format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+
+.font(Black);
+.font(Bold);
+.font(Heavy);
+.font(Light);
+.font(Medium);
+.font(Regular);
+.font(Semibold);
+.font(Thin);
+.font(Ultralight);
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ic/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url('../fonts/ic/MaterialIcons-Regular.woff2') format('woff2'),
+  url('../fonts/ic/MaterialIcons-Regular.woff') format('woff'),
+  url('../fonts/ic/MaterialIcons-Regular.ttf') format('truetype');
+}

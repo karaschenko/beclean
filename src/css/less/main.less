@@ -1,0 +1,154 @@
+@import "vars";
+.section-first {
+  font-family: @ff-Regular;
+  position: relative;
+
+  min-height: 768px;
+  & .header {
+    padding: 10px 0 0;
+
+    &-logo {
+      display: inline-block;
+      width: 132px;
+      height: 50px;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+    &-menu {
+      float: right;
+      &-item {
+        display: inline-block;
+        vertical-align: top;
+        &.tel {
+          color: @main-color;
+          & a {
+            color: @main-color;
+          }
+        }
+
+
+        & a {
+          color: #fff;
+          text-transform: uppercase;
+          display: inline-block;
+          padding: 15px 30px;
+          font-family: @ff-Regular;
+          &:hover {
+            border-radius: 20px;
+            background: fade(#fff, 20%);
+          }
+        }
+      }
+    }
+  }
+  .info-block {
+    margin-top: 160px;
+    color: #fff;
+    &-text {
+      &-main {
+        font-size: 72px;
+        font-family: @ff-Semibold;
+
+      }
+      &-additional {
+        font-family: @ff-Medium;
+        font-size: 25px;
+        margin-top: 60px;
+        line-height: 1.5em;
+      }
+    }
+    &-form {
+      text-align: center;
+      background: fade(#fff, 20%);
+      border-radius: 20px;
+      padding: 35px 15px;
+      &__title {
+        font-family: @ff-Medium;
+        font-size: 25px;
+        margin-bottom: 30px;
+     }
+      &-item {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        &__info {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          background: #fff;
+          border-radius: 20px;
+          line-height: 50px;
+          color: #000;
+          border: none;
+          &_submit {
+            background: @main-color;
+            font-family: @ff-Medium;
+            text-transform: uppercase;
+            height: 80%;
+            line-height: 40px;
+          }
+        }
+        &__btn {
+          position: absolute;
+          top: 0;
+          height: 50px;
+          line-height: 50px;
+          width: 70px;
+          font-size: 26px;
+          color: #000;
+          background: fade(#000, 20%);
+          &_minus {
+            left: 0;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border: none;
+          }
+          &_plus {
+             right: 0;
+             border-top-right-radius: 20px;
+             border-bottom-right-radius: 20px;
+             border: none;
+           }
+          &_tel {
+            left: 0;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .next-section {
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    bottom: 55px;
+    left: 50%;
+    margin-left: -77.5px;
+  }
+}
+
+.section-second {
+  padding: 40px 0;
+  text-align: center;
+  & .benefits-list {
+    &-item {
+      &__image {
+        font-size: 70px;
+        color: @main-color;
+        margin-bottom: 40px;
+      }
+      &__title {
+        font-size: 23px;
+        
+      }
+    }
+  }
+}
